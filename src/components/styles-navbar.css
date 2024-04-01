@@ -1,0 +1,43 @@
+.container-navbar {
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    text-transform: uppercase;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.logo {
+    padding: 10px 15px;
+}
+
+.main-nav {
+    display: flex;
+}
+
+.main-nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main-nav a {
+    color: #34495e;
+}
+
+.main-nav a:hover {
+    color: #718daa;
+}
+
+a {
+    text-decoration: none;
+}
