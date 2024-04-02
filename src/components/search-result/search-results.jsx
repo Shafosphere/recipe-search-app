@@ -1,23 +1,19 @@
-import { useEffect } from "react"
-import { CiBookmarkPlus } from "react-icons/ci";
 import "./styles-results.css"
-export default function Results({ data }) {
-
-    useEffect(() => {
-        console.log(data)
-    }, [])
-
+export default function Results({ data, onCardClick }) {
     return (
         <div className="container-results">
             <div className="cards">
                 {data.results.map((item, index) => (
-                    <div className="card" key={index}>
-                        <div className="card-top">
+                    <div
+                        className="card"
+                        onClick={() => onCardClick(item.id)}
+                        key={index}
+                    >
+                        <div id={item.id} className="card-top">
                             <img src={item.image} alt={item.title}></img>
                         </div>
                         <div className="card-content">
                             <p>{item.title}</p>
-                            <CiBookmarkPlus />
                         </div>
                     </div>
                 ))}

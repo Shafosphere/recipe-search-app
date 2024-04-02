@@ -16,26 +16,17 @@ ul {
     list-style: none;
 }
 
-.logo {
+.left-navbar {
     padding: 10px 15px;
 }
 
-.main-nav {
+.right-navbar{
     display: flex;
-}
-
-.main-nav a {
-    padding: 10px 15px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.main-nav a {
+    gap: 15px;
+    flex-direction: row;
     color: #34495e;
-}
-
-.main-nav a:hover {
-    color: #718daa;
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 a {
