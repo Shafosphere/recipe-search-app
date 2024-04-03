@@ -1,0 +1,108 @@
+.bot-container-info{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f8a203;
+    border-radius: 2px 2px 2px 2px;
+    margin: 2rem;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+    position: relative;
+    gap: 2rem;
+}
+/* left */
+.bot-container-left-info{
+    width: 50%;
+}
+.bot-container-right-info{
+    width: 50%;
+    padding-top: 2rem;
+}
+.bot-container-left-header-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bot-container-left-title{
+    font-weight: 700;
+    font-size: x-large;
+}
+.bot-container-left-servings{
+    font-size: 10;
+	padding: 5px 12px;
+	width: 40px;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #ff9900;
+	border-radius: 5px;
+	box-shadow: 3px 3px 2px 0px #E2E2E2;
+	transition: .3s ease;
+}
+.input-number-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bot-container-left-list-info{
+    display: flex;
+    flex-direction: column;
+}
+.bot-container-left-list-items-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 75px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(41, 41, 41);
+}
+.bot-container-left-list-items-info img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.bot-list-img-info{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bot-list-amount-info{
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    padding-left: 10px;
+}
+.bot-list-name-info{
+    width: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+/* right */
+.steps-container{
+    padding-left: 1rem;
+    /* border-left: 2px solid #f82803; */
+}
+.steps-data{
+    padding-left: 1rem;
+    border-left: 2px solid #ff9900;
+    max-width: 100%;
+    font-family: 'Open Sans';
+}
+.ingredients-img-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.small-ingredients{
+    height: 25px;
+    margin: 8px;
+}
