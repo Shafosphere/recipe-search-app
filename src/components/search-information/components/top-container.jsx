@@ -1,12 +1,21 @@
 import "./top.css"
-import 'chartjs-plugin-datalabels'; // Optional: For displaying labels
+import 'chartjs-plugin-datalabels'; 
 import TasteChart from "./chart";
+import { CiBookmarkPlus, CiBookmarkCheck  } from "react-icons/ci";
+import { useState } from "react";
 
-import { CiBookmarkPlus } from "react-icons/ci";
-export default function TopContainer({ data }) {
+export default function TopContainer({ data, setFav}) {
+const[check, setCheck] = useState(false)
+    function click(){
+        setFav(data.id, data.image, data.title, data.summary)
+        setCheck(true);
+    }
     return (
         <div className="top-container-info">
-            <CiBookmarkPlus className="icon-info" />
+            {(check) 
+                ? <CiBookmarkCheck onClick={() => click()} className="icon-info check" />
+                : <CiBookmarkPlus onClick={() => click()} className="icon-info" />
+            }
             <div className="top-container-head-info">
 
                 <div className="top-container-head-left-info">
@@ -28,10 +37,16 @@ export default function TopContainer({ data }) {
                 </div>
             </div>
             <div className="top-container-footer-info">
-                {/* chart js */}
-                {/* {Object.entries(data.taste).map(([tasteProperty, value]) => (
-                    <TasteChart className="Chart" key={tasteProperty} name={tasteProperty} value={value} />
-                ))} */}
+
+                {Object.entries(data.taste).map(([tasteProperty, value]) => (
+                    <div key={tasteProperty} className="Chart">
+                        <TasteChart key={tasteProperty} name={tasteProperty} value={value} />
+                        <div className="Chart-undertext">
+                            {tasteProperty}
+                        </div>
+                    </div>
+                ))}
+
             </div>
         </div>
     )
