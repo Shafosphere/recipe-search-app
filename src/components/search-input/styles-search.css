@@ -1,14 +1,12 @@
-.container-search{
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    flex-direction: column;
-    
+.container-search {
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	flex-direction: column;
+
 }
-
-
 .input {
 	font-size: 24px;
 	padding: 5px 12px;
@@ -32,7 +30,7 @@
 	color: #DDDDDD;
 }
 
-.API{
-    opacity: 0.2;
-    margin-top: 0.3rem;
+.API {
+	opacity: 0.2;
+	margin-top: 0.3rem;
 }

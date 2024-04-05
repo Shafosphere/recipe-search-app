@@ -8,6 +8,7 @@ import SearchRecipe from "../search-input/search-bar";
 import Results from "../search-result/search-results";
 import RecipeInfo from "../search-information/recipe-information";
 import Favorite from "../favorite/favorite";
+import Footer from "./footer";
 
 import { useState } from "react";
 
@@ -31,39 +32,40 @@ export default function Main() {
             setList([...favList, newFavorite]);
         }
     }
-    
 
-    async function fetchWeatherData() {
+    async function fetchfoodData() {
         try {
-          const localdata = await fetch(
-            `https://api.spoonacular.com/recipes/complexSearch?query=${food}&apikey=${API_KEY}`
-          );
-        //   console.log(`https://api.spoonacular.com/recipes/complexSearch?query=${food}&apikey=${API_KEY}`);
-        //   console.log('before new data');
-        //   console.log(data);
-          setResults(localdata);
-        //   console.log('after new data')
-        //   console.log(data)
+            const localdata = await fetch(
+                `https://api.spoonacular.com/recipes/complexSearch?query=${food}&apiKey=${API_KEY}`
+            );
+            const jsonData = await localdata.json();
+            setResults(jsonData);
+            setDisplay('Results');
         } catch (error) {
-          console.error('Błąd pobierania danych pogodowych:', error);
+            console.error('Error, cannot take data:', error);
         }
-      }
+    }
 
     function handleKeyPress(e) {
         if (e.key === 'Enter') {
-          fetchWeatherData();
+            fetchfoodData();
         }
     }
     function TypeAFoodName(e) {
         setFoodName(e.target.value);
-        console.log(food)
     }
 
-    function handleCardClick(id) {
-        console.log(id);
-        // got data based on id
-        // adding this data to recipeInformation
-        setDisplay('Information')
+    async function handleCardClick(id) {
+        try {
+            const localdata = await fetch(
+                `https://api.spoonacular.com/recipes/${id}/information?includeNutrition=false&apiKey=${API_KEY}`
+            );
+            const jsonData = await localdata.json();
+            setClicedResult(jsonData);
+            setDisplay('Information')
+        } catch (error) {
+            console.error('Error, cannot take data:', error);
+        }
     }
     function handleGoToHome() {
         setDisplay('Results');
@@ -80,11 +82,12 @@ export default function Main() {
                     <Results data={searchResults} onCardClick={handleCardClick} />
                 )}
                 {currentlyDisplay === 'Information' && (
-                    <RecipeInfo data={clickedResult} setFav={setFavorite}/>
+                    <RecipeInfo data={clickedResult} setFav={setFavorite} />
                 )}
                 {currentlyDisplay === 'Favorite' && (
-                    <Favorite favList={favList} onCardClick={handleCardClick}/>
+                    <Favorite favList={favList} onCardClick={handleCardClick} />
                 )}
+                <Footer />
             </div>
         </div>
     )

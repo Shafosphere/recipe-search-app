@@ -6,8 +6,8 @@ import BotContainer from "./components/bot-container";
 export default function RecipeInfo({ data, setFav }) {
     return (
         <div className="container-info">
-            <TopContainer data={data} setFav={setFav}/>
-            <BotContainer data={data}/>
+            <TopContainer data={data} setFav={setFav} />
+            <BotContainer data={data} />
         </div>
     )
 }

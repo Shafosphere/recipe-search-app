@@ -1,15 +1,14 @@
 .container-navbar {
     height: 100px;
     width: 100%;
-    background-color: rgba(255, 136, 0, 0.404);
-
+    background-image: radial-gradient(#ffaa00 2px, transparent 2px);
+    background-size: 10px 10px;
+    background-color: #ffc859;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     text-transform: uppercase;
-
     box-shadow: 3px 3px 2px 0px rgba(255, 139, 6, 1);
 }
 
@@ -21,6 +20,7 @@ ul {
 
 .left-navbar {
     padding: 10px 15px;
+    font-size: 40px;
 }
 
 .right-navbar {
@@ -28,7 +28,7 @@ ul {
     gap: 15px;
     flex-direction: row;
     color: #34495e;
-    font-size: 30px;
+    font-size: 40px;
     margin-right: 20px;
     color: rgb(255, 255, 255);
     font-weight: 900;

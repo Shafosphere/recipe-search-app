@@ -1,6 +1,6 @@
 import "./favorite.css"
-import { FaRegGrinAlt, FaRegGrinHearts, FaRegGrinStars, FaRegLaughBeam, FaRegSurprise} from "react-icons/fa";
-import { FaRegFaceDizzy,  } from "react-icons/fa6";
+import { FaRegGrinAlt, FaRegGrinHearts, FaRegGrinStars, FaRegLaughBeam, FaRegSurprise } from "react-icons/fa";
+import { FaRegFaceDizzy, } from "react-icons/fa6";
 
 export default function Favorite({ favList, onCardClick }) {
     function contain() {
@@ -14,7 +14,7 @@ export default function Favorite({ favList, onCardClick }) {
             <FaRegFaceDizzy />
         ];
 
-        function emoticons(){
+        function emoticons() {
             const selectedEmoticons = [];
             while (selectedEmoticons.length < 4) {
                 const randomIndex = Math.floor(Math.random() * availableEmoticons.length);

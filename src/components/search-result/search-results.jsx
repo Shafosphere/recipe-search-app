@@ -9,12 +9,9 @@ export default function Results({ data, onCardClick }) {
                         onClick={() => onCardClick(item.id)}
                         key={index}
                     >
-                        <div id={item.id} className="card-top">
-                            <img src={item.image} alt={item.title}></img>
-                        </div>
-                        <div className="card-content">
-                            <p>{item.title}</p>
-                        </div>
+                        <img src={item.image} alt={item.title}></img>
+                        <span className="title-contain">{item.title}</span>
+                        <span className="inscription-contain">SHOW RECIPE</span>
                     </div>
                 ))}
             </div>
