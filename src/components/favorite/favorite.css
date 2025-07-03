@@ -1,94 +1,107 @@
 .contain {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .items-contain {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    width: 100%;
-    padding: 3rem;
-    box-sizing: border-box;
-    border-bottom: 2px solid #ff9900;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
+  border-bottom: 2px solid #ff9900;
+  position: relative;
+}
+
+.remove-btn {
+  position: absolute;
+  bottom: 5rem;
+  left: 23rem;
+  background: none;
+  border: none;
+  color: #ff9900;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .left-contain {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-left: 2px solid #ff9900;
-    padding: 3rem;
-    max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 2px solid #ff9900;
+  padding: 3rem;
+  max-width: 300px;
 }
 
 .left-contain img {
-    max-height: 150px;
-    object-fit: cover;
-    min-width: 210;
+  max-height: 150px;
+  object-fit: cover;
+  min-width: 210;
 }
 
 .inscription-contain {
-    color: #ff9900;
-    font-weight: 700;
-    font-size: larger;
-    cursor: pointer;
+  color: #ff9900;
+  font-weight: 700;
+  font-size: larger;
+  cursor: pointer;
 }
 
 .title-contain {
-    font-family: 'Roboto';
-    font-size: 50px;
-    font-weight: 400;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .rigth-contain {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 3rem;
-    padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 3rem;
+  padding-top: 3rem;
 }
 
 .right-top-contain {
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    font-size: 100px;
-    padding-left: 3rem;
-    padding-right: 3rem;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 100px;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .right-bot-contain {
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .summary {
-    background-color: rgba(255, 153, 0, 0.452);
-    display: inline-flex;
-    padding: 1rem;
-    text-align: justify;
+  background-color: rgba(255, 153, 0, 0.452);
+  display: inline-flex;
+  padding: 1rem;
+  text-align: justify;
 }
 
 .summary a {
-    color: #000000 !important;
+  color: #000000 !important;
 }
 
 .not-contain {
-    padding-top: 10rem;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    color: rgb(255, 153, 0);
-    font-size: 45px;
-    font-weight: 500;
+  padding-top: 10rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: rgb(255, 153, 0);
+  font-size: 45px;
+  font-weight: 500;
 }

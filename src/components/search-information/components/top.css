@@ -42,7 +42,7 @@
 
 .top-container-head-right-title-info {
   height: 50%;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   display: flex;
   align-items: center;
   margin-left: 1rem;
@@ -58,7 +58,7 @@
   flex-direction: column;
   justify-content: center;
   height: 50%;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
 
 .taste-charts {
@@ -94,7 +94,7 @@
   justify-content: center;
   flex-direction: column;
 }
-.Chart-undertext{
+.Chart-undertext {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -103,6 +103,6 @@
   font-size: 17px;
   font-weight: 600;
 }
-.check{
+.check {
   color: #f8a203;
 }

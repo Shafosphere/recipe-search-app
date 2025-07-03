@@ -1,12 +1,41 @@
 .container-main {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-window {
-    background-color: white;
-    min-height: 100vh;
-    width: 1200px;
+  background-color: white;
+  min-height: 100vh;
+  width: 75rem;
+  padding-bottom: 6rem;
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #ffc859 #0000;
+  animation: l1 1s infinite;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.not-data {
+  font-size: 2rem;
+  padding: 1rem;
+  color: #ffc859;
+  font-weight: 600;
+  text-align: center;
+}
+@keyframes l1 {
+  to {
+    transform: rotate(0.5turn);
+  }
 }

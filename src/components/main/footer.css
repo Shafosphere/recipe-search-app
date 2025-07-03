@@ -1,20 +1,40 @@
 .container-footer {
-    height: 100px;
-    width: 100%;
-    margin-top: 3rem;
+  height: 5rem;
+  width: 75rem;
+  margin-top: 3rem;
 
-    background-image: radial-gradient(#ffaa00 2px, transparent 2px);
-    background-size: 10px 10px;
-    background-color: #ffc859;
+  background-image: radial-gradient(#ffaa00 2px, transparent 2px);
+  background-size: 10px 10px;
+  background-color: #ffc859;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    box-shadow: -3px -3px 0px 0px rgba(255, 139, 6, 1);
+  box-shadow: -3px -3px 0px 0px rgba(255, 139, 6, 1);
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
 }
 .container-footer a {
-    font-size: 20px;
-    color: #000000;
-    text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-cointaiter {
+  color: #c4d1eb;
+  background-color: #ffffff;
+  height: 3rem;
+  width: 64rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
 }
