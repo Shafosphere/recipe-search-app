@@ -37,9 +37,21 @@ The **Recipe Search App** lets you explore meals from the Spoonacular API. It is
 ## 4. Features
 
 - **Recipe search** – type a food name and press **Enter** to fetch matching recipes.
+
+![Recipe search](./gifs/Recipesearch.gif)
+
 - **Recipe details** – view ingredients, instructions and a taste chart powered by Chart.js.
+
+![Recipedetails.gif](./gifs/Recipedetails.gif)
+
 - **Favorites** – bookmark recipes for quick access; data is saved in `localStorage`.
+
+![Favorites](./gifs/Favorites.gif)
+
 - **Units and servings** – toggle metric/US measures and change the serving count.
+
+![Units](./gifs/Units.gif)
+
 - **Responsive** – layout adapts to smaller screens.
 
 ## 5. License
